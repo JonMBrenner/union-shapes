@@ -10,12 +10,10 @@ struct Circle {
   double radius;
 };
 
-
 struct Rectangle {
   double length;
   double width;
 };
-
 
 enum ShapeType { CIRCLE, RECTANGLE };
 
@@ -28,3 +26,11 @@ struct Shape {
   };
   enum ShapeType type;
 };
+
+double area(const struct Shape* shape) {
+  if (shape->type == CIRCLE) {
+    return PI * shape->radius * shape->radius;
+  else {
+    return shape->length * shape->width;
+  }
+}
