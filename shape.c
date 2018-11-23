@@ -34,3 +34,11 @@ double area(const struct Shape* shape) {
     return shape->length * shape->width;
   }
 }
+
+double perimeter(const struct Shape* shape) {
+  if (shape->type == CIRCLE) {
+    return 2 * PI * shape->radius;
+  } else {
+    return 2 * shape->length + 2 * shape->width;
+  }
+}
