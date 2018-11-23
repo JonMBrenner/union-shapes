@@ -20,10 +20,11 @@ struct Rectangle {
 enum ShapeType { CIRCLE, RECTANGLE };
 
 struct Shape {
+  int x;
+  int y;
   union {
     struct Circle circle;
     struct Rectangle rectangle;
   };
   enum ShapeType type;
 };
-
