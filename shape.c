@@ -50,3 +50,9 @@ int x_pos(const struct Shape* shape) {
 int y_pos(const struct Shape* shape) {
   return shape->y;
 }
+
+void set_rectangle(struct Shape* shape, double length, double width) {
+  shape->type = RECTANGLE;
+  shape->rectangle->length = length;
+  shape->rectangle->width = width;
+}
