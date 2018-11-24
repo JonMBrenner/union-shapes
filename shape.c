@@ -61,3 +61,7 @@ void set_circle(struct Shape* shape, double radius) {
   shape->type = CIRCLE;
   shape->circle->radius = radius;
 }
+
+int area_cmp(const struct Shape* lhs, const struct Shape* rhs) {
+  return area(lhs) - area(rhs);
+}
