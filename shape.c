@@ -56,3 +56,8 @@ void set_rectangle(struct Shape* shape, double length, double width) {
   shape->rectangle->length = length;
   shape->rectangle->width = width;
 }
+
+void set_circle(struct Shape* shape, double radius) {
+  shape->type = CIRCLE;
+  shape->circle->radius = radius;
+}
