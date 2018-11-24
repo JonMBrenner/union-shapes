@@ -84,3 +84,7 @@ struct Shape* new_circle(int x, int y, double radius) {
   cir->type = CIRCLE;
   return cir;
 }
+
+void free_shape(struct Shape* shape) {
+  free(shape);
+}
