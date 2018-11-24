@@ -42,3 +42,11 @@ double perimeter(const struct Shape* shape) {
     return 2 * shape->length + 2 * shape->width;
   }
 }
+
+int x_pos(const struct Shape* shape) {
+  return shape->x;
+}
+
+int y_pos(const struct Shape* shape) {
+  return shape->y;
+}
