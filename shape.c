@@ -75,3 +75,12 @@ struct Shape* new_rectangle(int x, int y, double length, double width) {
   rect->type = RECTANGLE;
   return rect;
 }
+
+struct Shape* new_circle(int x, int y, double radius) {
+  struct Shape* cir = malloc(sizeof *cir);
+  cir->x = x;
+  cir->y = y;
+  cir->circle.radius = radius;
+  cir->type = CIRCLE;
+  return cir;
+}
